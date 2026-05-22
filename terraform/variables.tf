@@ -9,7 +9,7 @@ variable "aws_vpc_name" {
 }
 
 variable "env_name" {
-  description = "The environment name used for tagging resources"
+  description = "The environment name used for tagging (e.g. staging, production)"
   type        = string
 }
 
@@ -24,12 +24,12 @@ variable "public_subnet_2_cidr" {
 }
 
 variable "availability_zone_subnet_1" {
-  description = "The availability zone for public subnet 1"
+  description = "The availability zone for public subnet 1 (e.g. us-east-1a)"
   type        = string
 }
 
 variable "availability_zone_subnet_2" {
-  description = "The availability zone for public subnet 2"
+  description = "The availability zone for public subnet 2 (e.g. us-east-1b)"
   type        = string
 }
 
@@ -44,6 +44,6 @@ variable "aws_name_subnet_2" {
 }
 
 variable "aws_main_igw_name" {
-  description = "The name tag for the internet gateway"
+  description = "The name tag for the Internet Gateway"
   type        = string
 }
